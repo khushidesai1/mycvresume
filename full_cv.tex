@@ -1,0 +1,153 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{mathptmx}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Khushi Desai} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+1 (408) 368-0965 \\ New York, NY} 
+\address{\href{mailto:khushipdesai@gmail.com}{khushipdesai@gmail.com} \\ \href{https://www.linkedin.com/in/khushidesai1/}{linkedin.com/in/khushidesai1/} \\
+\href{https://github.com/khushidesai1}{github.com/khushidesai}}  %
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Ph. D. Computer Science, \textit{Columbia University}} \hfill {\textit{Jan 2025} - \textit{Present}}\\
+{\bf M. S. Computer Science, \textit{Columbia University}} \hfill {\textit{Sept 2023} - \textit{Dec 2024}}\\
+\hspace*{6mm} \textbf{Graduate GPA:} 3.93\\
+\hspace*{6mm} \textbf{Relevant Coursework:} Machine Learning for Functional Genomics; Deep Learning in Computer Vision; Computer \\
+\hspace*{6mm} Graphics; High Performance Machine Learning; Robot Learning; Statistical Machine Learning for Genomics \\
+{\bf B. A. Computer Science, \textit{University of California, Berkeley}} \hfill {\textit{Aug 2019} - \textit{May 2023}}\\
+\hspace*{6mm} \textbf{Undergraduate GPA:} 3.64\\
+\hspace*{6mm} \textbf{Relevant Coursework:} Deep Neural Networks; Introduction to Machine Learning; Probability and Random Processes;  \hspace*{6mm} Operating Systems \& System Programming; Introduction to Artificial Intelligence; Efficient Algorithms and Intractable \hspace*{6mm} Problems; Computer Security; Introduction to Database Systems; Programming Languages and Compilers
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL SKILLS}
+
+{\bf Languages:} Python, Java, R, JavaScript, SQL, Bash, Scheme, HTML, CSS, C, RISC-v, GoLang, MongoDB, RTcmix
+\\
+{\bf Platforms, Frameworks \& Libraries:} PyTorch, TensorFlow, scvi-tools, scanpy, anndata, anakemake, Docker, DynamoDB, Jupyter Notebooks/Lab, React, Redux, AWS, Selenium, Chrome Extensions, Git
+\end{rSection}
+
+\begin{rSection}{RESEARCH EXPERIENCE}
+\textbf{Graduate Researcher, \textit{Azizi Lab at Columbia University}} \hfill {\it New York, NY} \(|\) {\it Jan 2024 - Present}
+\item {
+    \textbf{Hierarchical Causal Model for Cancer Patients}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Collaborated with Prof. David Blei to develop a hierarchical causal model estimating patient survival under interventions on treatment and spatial neighborhood of patient tumor tissues
+        \item Validated the model on semi-synthetic data from ~900 NSCLC patients, confirming recovery of true confounders and ground-truth causal effects
+        \item Applying the model to a cohort of 1,200 breast cancer patients (4 subtypes, CosMx 6K TMA cores) to predict survival outcomes under treatment and spatial interventions
+    \end{itemize}
+
+    \textbf{Scalable Contrastive Orientation for Causal Discovery (SCONE)} [\textit{\href{https://arxiv.org/abs/2603.03411v1}{arXiv pre-print}}]
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Developed SCONE, a scalable causal discovery framework for paired observational and interventional data with unknown, soft (multi-target) intervention effects, motivated by biological settings such as drug or cytokine perturbations affecting many genes simultaneously
+        \item Built on classical causal discovery by aggregating subset-level partially directed acyclic graphs (PDAGs) and applying contrastive cross-regime orientation rules to resolve edges that remain ambiguous within a single regime, formalized under a restricted $\Psi$-equivalence class with proven soundness and consistency guarantees
+        \item Demonstrated improved recovery of causal structure and scalability to larger graphs, generalizing to out-of-distribution graphs and unseen causal mechanisms
+\end{itemize}
+    
+    \textbf{Attention Mechanism Interpretation of Cell-cell Interactions (AMICI)} [\textit{\href{https://www.biorxiv.org/content/10.1101/2025.09.22.677860v1}{In review}, Nature Biotechnology}] \\
+    \textit{Presented at Machine Learning in Computational Biology 2024, Seattle and Single-Cell Genomics 2024, Greece}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Developed an interpretable attention-based neural network architecture to infer cell-cell interactions in single-cell spatial transcriptomics data
+        \item Developed rigorous statistical methods to interpret model performance from attention weights and prediction results
+        \item Discovered tumor driving macrophages towards tumor-associated phenotypes and T cell interactions potentially driving tumor cells to towards higher ER dependency beyond the known intrinsic cell cycles, by applying AMICI to an ER+ breast cancer sample
+    \end{itemize}
+    
+    \textbf{Spatial Colorectal Cancer Analysis}\\
+    \textit{Presented at Single-Cell Genomics 2025, Sweden and Single-Cell Genomics 2026, Scotland}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Leading a small team to analyze 24 samples (approx. 15 million cells) of microsatellite instability (MSI) and microsatellite stable (MSS) single-cell colorectal cancer data collected with CosMx 6K technology
+        \item Leading the design of a new package, Nympheas, built on Dask for distributed, GPU-accelerated processing of large-scale spatial transcriptomics and proteomics datasets
+        \item Leading a parallel CODEX analysis across multiple patients using a 68-plex protein panel to characterize the tumor microenvironment
+    \end{itemize}
+}
+
+\textbf{Undergraduate Researcher, \textit{Berkeley Artificial Intelligence Research Lab}} \hfill {\it Berkeley, CA} \(|\) {\it Sept 2022 - Dec 2023}
+\item {
+    \textbf{Conditional Auto-encoded Radiance Field for 3D Scene Forecasting (CARFF)} [\href{https://link.springer.com/chapter/10.1007/978-3-031-73024-5_14}{Paper}, \textit{\href{carff.website}{carff.website}}] \\
+    \textit{Published at European Conference on Computer Vision 2024, Italy}
+    \begin{itemize}
+        \itemsep -0.5em \vspace{-0.5em}
+        \item Developed an architecture and controller, CARFF, using a combination of VAE, ViTs and NeRF to predict probabilistic scenarios and take optimal actions based on occlusions in ego-centric scenes captured by autonomous vehicles
+        \item Trained an autoencoder to determine probabilities of edge case scenarios in the case of partial or complete occlusions on the road (obstructing cars, people, etc.)
+        \item Trained a NeRF to generate possible scenarios based on the autoencoder's probabilistic representations for obstructions around the corner of the occlusion, to ultimately enable the vehicle to make safer decisions 
+        \item Collborated with leading authors across universities and industries such as Harvard University, Toyota Research Institute, UC Berkeley, etc. 
+    \end{itemize}
+}
+% \textbf{Undergraduate Researcher, \textit{Sky Research Lab}} \hfill {\it Berkeley, CA} \(|\) {\it Jun 2022 - Nov 2022}
+% \item {
+%     \textbf{360 Long}
+%     \begin{itemize}
+%         \itemsep -0.5em \vspace{-0.5em}
+%         \item Contributed to an end-to-end system generating 6-DoF VR experiences from 360° video by training an MLP to learn multi-sphere image (MSI) radii, refining it via K-means-informed retraining, and validating improvements (10\% PSNR gain) across 12 ablation studies
+%     \end{itemize}
+% }
+% \textbf{Undergraduate Researcher, \textit{Real-Time Intelligent Secure Explainable Systems Lab}} \hfill {\it Berkeley, CA} \(|\) {\it Jan 2022 - May 2022}
+% \item {
+%     \textbf{Monocular Depth}
+%     \begin{itemize}
+%         \itemsep -0.5em \vspace{-0.5em}
+%         \item Researched and modified an existing monocular depth estimation model to improve flat-surface accuracy by patch-averaging depth values and incorporating a learned threshold during training
+%     \end{itemize}
+% }
+
+
+\end{rSection}
+
+\begin{rSection}{WORK EXPERIENCE}
+\textbf{Software Development Engineer Intern, \textit{Amazon}} \hfill {\it Sunnyvale, CA} \(|\)
+{\it May 2023 - Aug 2023}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Designed and implemented frontend and backend for a real-time dashboard for Alexa Smart Properties to monitor the set up of devices for hotels, hospitals, etc. 
+    \item Modified on top of existing Amazon React components to build UX of the website
+    \item Improved daily productivity for Alexa Certification team by accurately reflecting certification details
+\end{itemize}
+
+\textbf{Software Development Engineer Intern, \textit{Amazon}} \hfill {\it Sunnyvale, CA} \(|\) {\it May 2022 - Aug 2022}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Designed and implemented frontend and Java APIs for a personalized dashboard for Alexa Voice Services Console, used by Amazon Alexa Certification team to manage third-party client certifications for integrating Alexa into their products
+    \item Created React Redux components from scratch to build UX of the website
+    \item Developed Java APIs to pull and transform data from internal (DynamoDB) and external databases for accurate certification details
+    \item Improved daily productivity for Alexa Certification team by accurately reflecting accurate certification details
+    \end{itemize}
+
+\textbf{Software Engineer Intern, \textit{NVIDIA}} \hfill {\it Santa Clara, CA} \(|\) {\it May 2021 - Aug 2021}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Developed a Python perception application within a Docker container using a PyTorch semantic segmentation library and trained the neural network using Cityscapes dataset and RTX A6000 GPUs
+    \item Modified the semantic segmentation library by building a new data loader to allow the application to evaluate custom images on the trained neural network
+    \item Using the application, trained and evaluated the model on different levels of compute power including DGX A100 GPUs
+    \item Using application performance analysis, created a pitch to market NVIDIA's supercomputer unit, NVIDIA SuperPOD
+\end{itemize}
+
+\end{rSection} 
+
+\begin{rSection}{TEACHING}
+\textbf{Instructor, \textit{InspiritAI}} \hfill {\it Cupertino, CA} \(|\) {\it June 2023 - Aug 2024}
+\begin{itemize}
+\itemsep -0.5em \vspace{-0.5em}
+\item Conducted summer sessions teaching high school and middle school students fundamental AI and ML concepts, guiding them to build, train, and evaluate models using Python libraries in Jupyter Notebooks and apply their learnings to final projects across fields ranging from biomedical to autonomous driving applications
+\end{itemize}
+\textbf{Research Mentor, \textit{Polygence}} \hfill {\it Cupertino, CA} \(|\) {\it June 2023 - Present}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Mentoring high school students through a 1:1 sessions to write a research paper on AI applications for applications such as distracted driving prevention software and diffusion models for sign language video generation, guiding them to analyze existing literature, identify research gaps, train models, and develop well-supported conclusions
+\end{itemize}
+\end{rSection}
+\end{document}
