@@ -1,0 +1,106 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{mathptmx}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Khushi Desai} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\vspace{-2mm}
+\address{+1 (408) 368-0965 \\ New York, NY} 
+\address{\href{mailto:khushipdesai@gmail.com}{khushipdesai@gmail.com} \\ \href{https://www.linkedin.com/in/khushidesai1/}{linkedin.com/in/khushidesai1/} \\
+\href{https://github.com/khushidesai1}{github.com/khushidesai}}  %
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf PhD Computer Science, \textit{Columbia University}} \hfill {\textit{Jan 2025} - \textit{Present}}\\
+{\bf MS Computer Science, \textit{Columbia University}} (3.93 GPA) \hfill {\textit{Sept 2023} - \textit{Dec 2024}}\\
+\hspace*{6mm} \textbf{Relevant Coursework:} Probabilistic Models and Machine Learning; Deep Learning in Computer Vision; Computer \hspace*{6mm}Graphics; High Performance Machine Learning; Robot Learning \\
+{\bf BA Computer Science, \textit{University of California, Berkeley}} (3.64 GPA) \hfill {\textit{Aug 2019} - \textit{May 2023}}\\
+\hspace*{6mm} \textbf{Relevant Coursework:} Deep Neural Networks; Machine Learning; Operating Systems; Database Systems
+\end{rSection}
+\vspace{-2mm}
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL SKILLS}
+{\bf Languages:} Python, Java, JavaScript, SQL, Bash, Scheme, HTML, CSS, C, RISC-v, GoLang, MongoDB
+\\
+{\bf Platforms, Frameworks \& APIs:} PyTorch, TensorFlow, SCVI, Scanpy, Anndata, Docker, DynamoDB, Jupyter Notebooks/Lab, React, Redux, AWS, Selenium, Chrome Extensions, Alexa Skill Development
+\end{rSection}
+\vspace{-2mm}
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Graduate Researcher, \textit{Azizi Lab at Columbia University}} \hfill {\it New York, NY} \(|\) {\it Jan 2024 - Present}\\
+\textbf{AMICI} 
+\textit{Submitted to Nature Biotechnology (\href{https://www.biorxiv.org/content/10.1101/2025.09.22.677860v1}{paper} in review); Presented at MLCB 2024}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Developed AMICI, an attention-based neural network architecture to infer cell interactions in single-cell spatial data
+    \item Developed semi-synthetic data to validate model performance, and benchmarked against existing SOTA methods 
+    \item Interpreted model weights and predictions to analyze results on real-world single-cell Xenium breast cancer data
+\end{itemize}
+\textbf{Xenium 5k Colorectal Cancer Analysis} \textit{Presented at Single-Cell Genomics 2025}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Pre-processing, analyzing and annotating high-throughput single-cell spatial transcriptomics data
+    \item Applying AMICI to discover insights into transcriptional targets for colorectal cancer in African American patients
+\end{itemize}
+
+\textbf{Undergraduate Researcher, \textit{Berkeley Artificial Intelligence Research Lab}} \hfill {\it Berkeley, CA} \(|\) {\it Sept 2022 - Dec 2023}\\
+\textbf{CARFF} \textit{Paper accepted to European Conference on Computer Vision 2024 in Italy (\href{carff.website}{carff.website}, \href{https://link.springer.com/chapter/10.1007/978-3-031-73024-5_14}{paper})}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Developed CARFF, an architecture combining VAE, ViTs, and NeRF, to predict probabilistic scenarios and take optimal actions based on occlusions in autonomous vehicle ego-centric scenes
+    \item Built a two-stage training process: a conditional autoencoder to encode from partial or complete occlusions in view; and a NeRF decoder to generate scenes from encoded occlusions, enabling safer vehicle decisions
+\end{itemize}
+
+\textbf{Software Development Engineer Intern, \textit{Amazon}} \hfill {\it Sunnyvale, CA} \(|\)
+{\it May 2023 - Aug 2023}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Designed and implemented frontend and backend for a real-time dashboard for Alexa Smart Properties to monitor the set up of devices for hotels, hospitals, etc. 
+    % \item Modified on top of existing Amazon React components to build UX of the website
+    \item Improved efficiency of Alexa setup for smart property owners through dashboard that will be incorporated on the team's customer facing website
+\end{itemize}
+
+\textbf{Software Development Engineer Intern, \textit{Amazon}} \hfill {\it Sunnyvale, CA} \(|\) {\it May 2022 - Aug 2022}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Designed and implemented frontend and Java APIs for personalized dashboard for Alexa Voice Services Console, used by Amazon Alexa Certification team to manage third-party client certifications for integrating Alexa into products
+    % \item Created React Redux components from scratch to build UX of the website
+    % \item Developed Java APIs to pull and transform data from DynamoDB and external databases for certification details
+    \item Improved daily productivity for Alexa Certification team by accurately reflecting certification details
+\end{itemize}
+
+\textbf{Solutions Architect Intern, \textit{NVIDIA}} \hfill {\it Santa Clara, CA} \(|\) {\it May 2021 - Aug 2021}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Developed a Python perception application in a Docker container using PyTorch semantic segmentation, trained on Cityscapes dataset with RTX A6000 GPUs
+    \item Built a custom data loader, and trained and evaluated the model on various compute levels, including DGX A100 GPUs
+    \item Created a pitch to market NVIDIA SuperPOD using application performance analysis
+\end{itemize}
+
+\end{rSection}
+\vspace{-2mm}
+\begin{rSection}{LEADERSHIP}
+
+\textbf{Instructor, \textit{InspiritAI}} \hfill {\it Cupertino, CA} \(|\) {\it June 2023 - Present}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Teaching high school and middle school students to develop AI models using Python libraries and Jupyter Notebooks
+\end{itemize}
+
+\textbf{Sponsorship Director, \textit{Cal Hacks}} \hfill {\it Berkeley, CA} \(|\) {\it Feb 2020 - Dec 2021}
+\begin{itemize}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Raised over \$200,000 for the largest UC Berkeley hackathon by collaborating with 120+ companies, including Microsoft, Google, and Uniswap, with Steve Wozniak as one of our keynote speakers
+\end{itemize}
+\end{rSection}
+
+\end{document}
